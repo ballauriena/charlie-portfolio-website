@@ -41,3 +41,15 @@ configure :build do
   # create sitemap.xml
   activate :search_engine_sitemap
 end
+
+helpers do
+  def body_class
+    [current_page.data.body_class, title.gsub(/[\s_]/, "-")].compact.join(" ")
+  end
+
+  def title
+    current_page.data.title.presence ||
+    current_article.try(:title) ||
+    yield_content(:title).to_s
+  end
+end
