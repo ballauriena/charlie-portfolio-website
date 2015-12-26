@@ -8,12 +8,10 @@
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= current_page.data.title || "Middleman" %></title>
 
-    <link href='//fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
-
-    <%= stylesheet_link_tag :application %>
+    <%= stylesheet_link_tag 'application' %>
   </head>
 
-  <body class="<%= body_class %> <%= page_classes %> <%= yield_content(:body_class) %>">
+  <body class="<%= body_class %>">
     <%= partial 'shared/navigation' %>
     <%= yield %>
   </body>

@@ -5,11 +5,10 @@ set :url_root, 'http://charliecrowe.bitballoon.com'
 config[:css_dir]    = 'assets/stylesheets'
 config[:js_dir]     = 'assets/javascripts'
 config[:images_dir] = 'assets/images'
-config[:fonts_dir]  = 'assets/fonts'
 
-# Reload the browser automatically whenever files change
 configure :development do
-  activate :livereload
+  activate :directory_indexes
+  set :debug_assets, true
 end
 
 
