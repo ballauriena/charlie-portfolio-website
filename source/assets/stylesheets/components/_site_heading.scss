@@ -1,0 +1,39 @@
+.site-heading {
+    h1, h2 {
+      position: relative;
+      left: -2px;
+    }
+
+    h1 {
+      color: white;
+      top: -32px;
+    }
+
+    h2 {
+      color: color(gray);
+      top: 14px;
+    }
+
+    .title-bar {
+      background-color: color(gray);
+      height: 39px;
+    }
+
+  @include media($desktop) {
+    h1, h2 {
+      left: -5px;
+    }
+
+    h1 {
+      top: -55px;
+    }
+
+    h2 {
+      top: 25px;
+    }
+
+    .title-bar {
+      height: 65px;
+    }
+  }
+}

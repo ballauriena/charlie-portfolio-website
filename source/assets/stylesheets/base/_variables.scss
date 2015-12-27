@@ -1,0 +1,14 @@
+@import "colors.json";
+
+@function color($name) {
+  $color: map-get($colors, $name);
+
+  @if type-of($color) != "color" {
+    @error("Missing color: '#{$name}'");
+  }
+  @return $color;
+}
+
+//Fonts
+$base-font-family:   'Nixie One', serif;
+$header-font-family: 'Alegreya Sans SC', sans-serif;

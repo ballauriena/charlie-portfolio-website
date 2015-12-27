@@ -1,3 +1,13 @@
 main {
-  @include outer-container;
+  width: 100%;
+
+  @include media($mobile-max) {
+    width: 500px;
+    margin: 0 auto;
+  }
+
+  @include media($desktop) {
+    @include outer-container;
+    width: auto;
+  }
 }

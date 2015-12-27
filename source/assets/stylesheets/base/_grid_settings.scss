@@ -4,8 +4,8 @@
 $column: 90px;
 $gutter: 30px;
 $grid-columns: 10;
-$max-width: 1000px;
+$max-width: 850px;
 
 // Define your breakpoints
-$desktop: new-breakpoint(max-width 1200px 4);
-$tablet: new-breakpoint(max-width 768px 8);
+$desktop: new-breakpoint(min-width 850px 8);
+$mobile-max: new-breakpoint(min-width 500px 4)
