@@ -1,0 +1,50 @@
+.homepage {
+  .matera-project {
+    background-image: image_url("matera-project/cliff.png");
+    background-position: center center;
+
+    &:hover {
+      .project-screen {
+        display: none;
+      }
+    }
+  }
+
+  .slo-highschool {
+    background-image: image_url("slo-highschool/slo-hs.png");
+    background-position: 50% 90%;
+
+    &:hover {
+      .project-screen {
+        display: none;
+      }
+    }
+  }
+
+  .rose-float {
+    background-image: image_url("rose-float/rose-float.jpg");
+    background-position: center center;
+
+    &:hover {
+      .project-screen {
+        display: none;
+      }
+    }
+  }
+
+  .resume {
+    @include clearfix;
+    height: 250px;
+
+    h3 {
+      text-align: center;
+      margin-top: 100px;
+    }
+  }
+
+  .bio {
+    img {
+      width: 100%;
+    }
+  }
+}

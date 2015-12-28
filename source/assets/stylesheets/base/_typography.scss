@@ -1,6 +1,16 @@
-h1, h2 {
+* {
+  font-family: $base-font-family;
+}
+
+h1, h2, h3 {
   font-family: $header-font-family;
   font-weight: 300;
+  margin: 0;
+}
+
+h3 {
+  font-size: 1.75em;
+  color: color(dark-blue);
   margin: 0;
 }
 
@@ -12,7 +22,23 @@ h2 {
   font-size: 2.96em;
 }
 
+a {
+  font-size: 0.75em;
+  font-family: $base-font-family;
+  text-decoration: none;
+  color: color(dark-blue);
+
+  &:hover {
+    cursor: pointer;
+    font-weight: bold;
+  }
+}
+
 @include media($desktop) {
+  a {
+    font-size: 1em;
+  }
+
   h1 {
     font-size: 8.5em;
   }

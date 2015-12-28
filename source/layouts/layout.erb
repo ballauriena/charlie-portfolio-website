@@ -12,7 +12,10 @@
   </head>
 
   <body class="<%= body_class %>">
-    <%= partial 'shared/navigation' %>
-    <%= yield %>
+    <main>
+      <%= partial 'shared/navigation' %>
+      <%= yield %>
+      <%= partial 'shared/footer' %>
+    </main>
   </body>
 </html>

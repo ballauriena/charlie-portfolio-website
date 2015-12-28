@@ -5,6 +5,7 @@ set :url_root, 'http://charliecrowe.bitballoon.com'
 config[:css_dir]    = 'assets/stylesheets'
 config[:js_dir]     = 'assets/javascripts'
 config[:images_dir] = 'assets/images'
+config[:fonts_dir]  = 'assets/fonts'
 
 configure :development do
   activate :directory_indexes

@@ -1,0 +1,116 @@
+.project-preview {
+  width: 100%;
+  height: 250px;
+  margin-bottom: 10px;
+  background-repeat: no-repeat;
+  position: relative;
+
+  &:hover {
+    .description-screen {
+      opacity: 0.75;
+    }
+
+    a {
+      display: block;
+    }
+  }
+}
+
+.project-screen {
+  width: 100%;
+  height: 100%;
+  opacity: 0.75;
+  background-color: white;
+}
+
+.description-screen {
+  width: 265px;
+  height: 100px;
+  opacity: 0;
+  background-color: white;
+  position: absolute;
+  top: 75px;
+
+  p {
+    display: inline-block;
+    margin: 0;
+    top: 55px;
+    left: 20px;
+    position: relative;
+    font-weight: bold;
+    font-size: 0.75em;
+  }
+
+  &:after {
+    content: "";
+    display: inline-block;
+    height: 0;
+    width: 0;
+    border: 50px solid transparent;
+    border-left-color: white;
+    opacity: 1;
+    position: relative;
+    left: 265px;
+    top: -18px;
+  }
+
+  @include media($mobile-max) {
+    width: 350px;
+
+    p {
+      top: -30px;
+      font-size: 0.75em;
+    }
+
+    &:after {
+      left: 167px;
+      top: 0px;
+    }
+  }
+
+  @include media($desktop) {
+    width: 500px;
+
+    p {
+      top: -25px;
+      font-size: 1em;
+    }
+
+    &:after {
+      left: 257px;
+      top: 0px;
+    }
+  }
+}
+
+.project-title {
+  position: absolute;
+  width: 250px;
+  top: 91px;
+  left: 20px;
+  border-bottom: 1px solid color(dark-blue);
+
+  h3 {
+    float: left;
+    display: inline-block;
+  }
+
+  a {
+    float: right;
+    display: inline-block;
+    margin-top: 12px;
+    display: none;
+  }
+
+  @include media($mobile-max) {
+    width: 300px;
+
+    a {
+      margin-top: 10px;
+    }
+  }
+
+  @include media($desktop) {
+    width: 50%;
+  }
+}

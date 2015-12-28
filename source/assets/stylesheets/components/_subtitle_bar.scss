@@ -1,0 +1,22 @@
+.subtitle-bar {
+  background-color: color(dark-blue);
+  height: 22px;
+  overflow: hidden;
+  color: white;
+  margin-bottom: 10px;
+
+  h2 {
+    position: relative;
+    top: -20px;
+    left: -5px;
+  }
+
+  @include media($desktop) {
+    height: 40px;
+
+    h2 {
+      top: -33px;
+      left: -8px;
+    }
+  }
+}

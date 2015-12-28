@@ -1,23 +1,25 @@
 .site-heading {
-    h1, h2 {
-      position: relative;
-      left: -2px;
-    }
+  h1, h2 {
+    position: relative;
+    left: -2px;
+  }
 
-    h1 {
-      color: white;
-      top: -32px;
-    }
+  h1 {
+    color: white;
+    line-height: 0.5em;
+    top: -4px;
+  }
 
-    h2 {
-      color: color(gray);
-      top: 14px;
-    }
+  h2 {
+    color: color(gray);
+    top: 14px;
+  }
 
-    .title-bar {
-      background-color: color(gray);
-      height: 39px;
-    }
+  .title-bar {
+    background-color: color(gray);
+    height: 39px;
+    overflow: hidden;
+  }
 
   @include media($desktop) {
     h1, h2 {
@@ -25,7 +27,7 @@
     }
 
     h1 {
-      top: -55px;
+      top: -7px;
     }
 
     h2 {

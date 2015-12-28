@@ -1,0 +1,19 @@
+nav {
+  ul {
+    @include clearfix;
+    list-style: none;
+    padding: 0;
+  }
+
+  li {
+    float: left;
+    display: inline-block;
+    width: 25%;
+    text-align: center;
+    text-transform: uppercase;
+
+    a {
+      letter-spacing: 2px;
+    }
+  }
+}
