@@ -1,6 +1,8 @@
 {
   "colors": {
     "gray":      "#CACACA",
-    "dark-blue": "#27394F"
+    "dark-gray": "#808080",
+    "dark-blue": "#27394F",
+    "blue-gray": "#8591AD"
   }
 }

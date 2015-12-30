@@ -3,6 +3,8 @@ nav {
     @include clearfix;
     list-style: none;
     padding: 0;
+    background-color: color(blue-gray);
+    margin: 0;
   }
 
   li {
@@ -12,8 +14,11 @@ nav {
     text-align: center;
     text-transform: uppercase;
 
+
     a {
       letter-spacing: 2px;
+      color: white;
+      line-height: 45px;
     }
   }
 }
