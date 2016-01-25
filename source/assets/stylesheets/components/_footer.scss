@@ -1,7 +1,7 @@
 footer {
   width: 100%;
   font-size: 0.75em;
-  padding: 0 10px;
+  padding: 20px 10px 0px 10px;
   height: 150px;
   color: color(gray);
 
@@ -10,29 +10,8 @@ footer {
     margin: 0;
   }
 
-  .social-media {
-    float: right;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-
-    li {
-      float: left;
-      display: inline;
-      margin-left: 1em;
-    }
-
-    a {
-      font-size: 2em;
-      color: color(gray);
-
-      &:hover {
-        color: color(dark-blue);
-      }
-    }
-  }
-
-  @include media($desktop) {
-    padding: 0;
+  @include media($mobile-max) {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
