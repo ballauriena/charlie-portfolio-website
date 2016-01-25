@@ -1,4 +1,4 @@
-set :url_root, 'http://charliecrowe.bitballoon.com'
+set :url_root, 'http://www.charliecrowe.co'
 
 # Configure assets directories
 # ----------------------------------------------
@@ -52,4 +52,10 @@ helpers do
     current_article.try(:title) ||
     yield_content(:title).to_s
   end
+end
+
+activate :bitballoon do |bitballoon|
+  bitballoon.token = ENV["BB_TOKEN"]
+  bitballoon.site  = 'charliecrowe.bitballoon.com'
+  bitballoon.build_before = true
 end
