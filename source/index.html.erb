@@ -3,6 +3,7 @@ title: Charlie Crowe | Architecture Portfolio
 body_class: homepage
 ---
 <div class="panels" id="portfolio">
+<h2>Portfolio</h2>
   <div class="panel">
     <% link_to "#" do %>
       <div class="project-preview matera-project">
@@ -124,26 +125,28 @@ body_class: homepage
     along the way.
   </p>
 </div>
-<%= image_tag("bio/charlie.jpg", alt: "Charlie Crowe", class:"bio-image") %>
-<div class="contact-content" id="contact">
-  <ul class="contact-links">
-    <li>
-      <% link_to "#", title: "resume", target: "_blank" do %>
-        <i class="fa fa-file-text"></i>
-      <% end %>
-    </li>
-    <li>
-      <% link_to "mailto:charlietcrowe@gmail.com", title: "email", target: "_blank" do %>
-        <i class="fa fa-envelope"></i>
-      <% end %>
-    </li>
-    <li>
-      <% link_to "https://www.linkedin.com/in/charlie-crowe-b925174a", title: "linkedin", target: "_blank" do %>
-        <i class="fa fa-linkedin-square"></i>
-      <% end %>
-    </li>
-  </ul>
+<div class="contact" id="contact">
+  <%= image_tag("bio/charlie.jpg", alt: "Charlie Crowe", class:"bio-image") %>
+  <div class="content">
+    <ul class="contact-links">
+      <li>
+        <% link_to "#", title: "resume", target: "_blank" do %>
+          <i class="fa fa-file-text"></i>
+        <% end %>
+      </li>
+      <li>
+        <% link_to "mailto:charlietcrowe@gmail.com", title: "email", target: "_blank" do %>
+          <i class="fa fa-envelope"></i>
+        <% end %>
+      </li>
+      <li>
+        <% link_to "https://www.linkedin.com/in/charlie-crowe-b925174a", title: "linkedin", target: "_blank" do %>
+          <i class="fa fa-linkedin-square"></i>
+        <% end %>
+      </li>
+    </ul>
 
-  <hr />
-  <p>Thank you for visiting!</p>
+    <hr />
+    <p>Thank you for visiting!</p>
+  </div>
 </div>

@@ -21,6 +21,12 @@ h1 {
 
 h2 {
   font-size: 2.96em;
+  color: color(light-blue-gray);
+  margin-top: 20px;
+
+  @include media($mobile-max) {
+    margin-top: 50px;
+  }
 }
 
 a {

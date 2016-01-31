@@ -1,15 +1,17 @@
 class ScrollLinks
   constructor: (options) ->
-    @links = options.links
+    @links   = options.links
+    @heading = options.heading
 
   setup: ->
     for link in @links
-      new ScrollLink({ el: link, links: @links }).activateScroll()
+      new ScrollLink({ el: link, links: @links, heading: @heading }).activateScroll()
 
   class ScrollLink
     constructor: (options) ->
-      @$el   = options.el
-      @links = options.links
+      @$el     = options.el
+      @links   = options.links
+      @heading = options.heading
 
     activateScroll: ->
       @_listen()
@@ -25,11 +27,11 @@ class ScrollLinks
 
     _scrollToElement: ->
       $('html, body').animate({
-        scrollTop: @_element().offset().top - 250
+        scrollTop: @_element().offset().top - 300
       }, 1000)
 
     _element: ->
-      $("#{@$el.attr('href')}")
+      $(@$el.attr('href'))
 
     _deactivateLinks: ->
       for link in @links
@@ -40,4 +42,4 @@ class ScrollLinks
 
 
 $ ->
-  new ScrollLinks({ links: [$('a[href=#portfolio]'), $('a[href=#biography]'), $('a[href=#contact]')] }).setup()
+  new ScrollLinks({ links: [$('a[href=#portfolio]'), $('a[href=#biography]'), $('a[href=#contact]')], heading: $('.title-bar h1') }).setup()
