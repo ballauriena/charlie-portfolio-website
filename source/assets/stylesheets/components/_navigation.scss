@@ -25,6 +25,16 @@ nav {
     a {
       letter-spacing: 2px;
       line-height: 45px;
+      padding: 10px;
+      width: 100%;
+      display: block;
+
+      &.active {
+        text-decoration: underline;
+        background-color: color(light-blue-gray);
+        color: white;
+        border-radius: 2px;
+      }
     }
   }
 

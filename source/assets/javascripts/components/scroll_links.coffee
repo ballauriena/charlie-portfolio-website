@@ -4,11 +4,12 @@ class ScrollLinks
 
   setup: ->
     for link in @links
-      new ScrollLink({ el: link }).activateScroll()
+      new ScrollLink({ el: link, links: @links }).activateScroll()
 
   class ScrollLink
     constructor: (options) ->
-      @$el = options.el
+      @$el   = options.el
+      @links = options.links
 
     activateScroll: ->
       @_listen()
@@ -18,13 +19,24 @@ class ScrollLinks
 
     _handleScroll: (e) =>
       e.preventDefault()
-      console.log @_element()
+      @_deactivateLinks()
+      @_scrollToElement()
+      @_activateLink()
+
+    _scrollToElement: ->
       $('html, body').animate({
         scrollTop: @_element().offset().top - 250
-      }, 1000);
+      }, 1000)
 
     _element: ->
       $("#{@$el.attr('href')}")
+
+    _deactivateLinks: ->
+      for link in @links
+        link.removeClass('active')
+
+    _activateLink: ->
+      @$el.addClass('active')
 
 
 $ ->

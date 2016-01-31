@@ -55,6 +55,10 @@
     color: color(dark-gray);
     padding-bottom: 50px;
 
+    h2 {
+      color: color(light-blue-gray);
+    }
+
     p {
       margin: 2em;
       line-height: 1.7em;
@@ -113,10 +117,10 @@
       a {
         transition: all 0.3s ease;
         font-size: 2.5em;
-        color: color(gray);
+        color: white;
 
         &:hover {
-          color: color(dark-blue);
+          color: color(light-blue-gray);
         }
       }
     }
