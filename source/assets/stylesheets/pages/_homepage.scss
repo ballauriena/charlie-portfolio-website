@@ -52,21 +52,15 @@
   }
 
   .bio-text {
-    background-color: color(dark-blue);
-    color: white;
+    color: color(dark-gray);
     padding-top: 6px;
     padding-bottom: 50px;
-    text-align: center;
 
     p {
       margin: 2em;
       line-height: 1.7em;
       padding: 0 25px;
       font-size: 0.85em;
-
-      &:first-of-type {
-        margin-top: 75px;
-      }
     }
 
     @include media($desktop) {
@@ -79,7 +73,28 @@
 
   .contact-content {
     height: 250px;
-    background-color: color(blue-gray);
+    position: relative;
+    top: -200px;
+
+    hr {
+      border: none;
+      background-color: color(dark-blue);
+      width: 200px;
+      height: 2px;
+      float: left;
+      margin-left: 25px;
+      margin-top: 20px;
+    }
+
+    p {
+      color: color(dark-blue);
+      float: left;
+      margin-left: 25px;
+      clear: left;
+      margin-top: 0;
+      font-weight: bold;
+      font-family: $header-font-family;
+    }
 
     .contact-links {
       @include clearfix;
@@ -87,35 +102,48 @@
       margin: 0;
       padding: 0;
       padding-top: 20px;
-      margin: 0 auto;
-      width: 50%;
+      margin-left: 25px;
 
       li {
-        @include span-columns(4 of 8);
         float: left;
         display: inline;
         text-align: center;
-        line-height: 150px;
+        margin-right: 50px;
       }
 
       a {
         transition: all 0.3s ease;
         font-size: 3.5em;
-        color: color(gray);
+        color: color(dark-blue);
 
         &:hover {
-          color: color(dark-blue);
+          color: color(gray);
         }
       }
     }
 
-    hr {
-      width: 50%;
+    @include media($mobile-max) {
+      top: -215px;
+
+      .contact-links, hr, p {
+        margin-left: 50px;
+      }
     }
 
-    p {
-      text-align: center;
-      color: color(gray);
+    @include media($desktop) {
+      top: -325px;
+
+      .contact-links, hr, p {
+        margin-left: 100px;
+      }
+
+      hr {
+        width: 300px;
+      }
+
+      p {
+        font-size: 1.5em;
+      }
     }
   }
 
