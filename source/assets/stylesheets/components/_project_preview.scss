@@ -22,10 +22,6 @@
         transform: scaleX(1);
       }
     }
-
-    .description .more {
-      text-shadow: 0.5px 0.5px color(dark-gray);
-    }
   }
 
   @include media($mobile-max) {

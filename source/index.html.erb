@@ -2,7 +2,7 @@
 title: Welcome to Middleman
 body_class: homepage
 ---
-<div class="panels">
+<div class="panels" id="portfolio">
   <div class="panel">
     <% link_to "#" do %>
       <div class="project-preview matera-project">
@@ -125,15 +125,20 @@ body_class: homepage
   </p>
 </div>
 <%= image_tag("bio/charlie.jpg", alt: "Charlie Crowe", class:"bio-image") %>
-<div class="contact-content">
+<div class="contact-content" id="contact">
   <ul class="contact-links">
     <li>
-      <% link_to "mailto:charlietcrowe@gmail.com", target: "_blank" do %>
+      <% link_to "#", title: "resume", target: "_blank" do %>
+        <i class="fa fa-file-text"></i>
+      <% end %>
+    </li>
+    <li>
+      <% link_to "mailto:charlietcrowe@gmail.com", title: "email", target: "_blank" do %>
         <i class="fa fa-envelope"></i>
       <% end %>
     </li>
     <li>
-      <% link_to "https://www.linkedin.com/in/charlie-crowe-b925174a", target: "_blank" do %>
+      <% link_to "https://www.linkedin.com/in/charlie-crowe-b925174a", title: "linkedin", target: "_blank" do %>
         <i class="fa fa-linkedin-square"></i>
       <% end %>
     </li>
