@@ -77,16 +77,16 @@
 
     hr {
       border: none;
-      background-color: color(dark-blue);
+      background-color: white;
       width: 200px;
-      height: 2px;
+      height: 1px;
       float: left;
       margin-left: 25px;
       margin-top: 20px;
     }
 
     p {
-      color: color(dark-blue);
+      color: white;
       float: left;
       margin-left: 25px;
       clear: left;
@@ -107,16 +107,16 @@
         float: left;
         display: inline;
         text-align: center;
-        margin-right: 50px;
+        margin-right: 25px;
       }
 
       a {
         transition: all 0.3s ease;
-        font-size: 3.5em;
-        color: color(dark-blue);
+        font-size: 2.5em;
+        color: color(gray);
 
         &:hover {
-          color: color(gray);
+          color: color(dark-blue);
         }
       }
     }
@@ -125,12 +125,12 @@
       top: -215px;
 
       .contact-links, hr, p {
-        margin-left: 50px;
+        margin-left: 30px;
       }
     }
 
     @include media($desktop) {
-      top: -325px;
+      top: -355px;
 
       .contact-links, hr, p {
         margin-left: 100px;
