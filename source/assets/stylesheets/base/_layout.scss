@@ -19,4 +19,8 @@ main {
     @include outer-container;
     width: auto;
   }
+
+  &.transform {
+    padding-top: 200px;
+  }
 }

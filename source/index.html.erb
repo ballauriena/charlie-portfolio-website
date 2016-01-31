@@ -2,79 +2,88 @@
 title: Welcome to Middleman
 body_class: homepage
 ---
-<div class="subtitle-bar">
-  <h2>portfolio</h2>
-</div>
 <div class="panels">
   <div class="panel">
-    <div class="project-preview matera-project">
-      <div class="description-screen"></div>
-      <div class="project-details">
-        <h3>matera project</h3>
-        <div class="description">
-          <p>This is the project description.</p>
-          <hr />
-          <%= link_to "more" , "#" %>
+    <% link_to "#" do %>
+      <div class="project-preview matera-project">
+        <div class="description-screen"></div>
+        <div class="project-details">
+          <div class="description">
+            <h3>matera project</h3>
+            <p>This is the project description.</p>
+            <hr />
+            <p class="more">more</p>
+          </div>
+        </div>
+      </div>
+    <% end %>
+    <% link_to "#" do %>
+      <div class="project-preview senior-project">
+        <div class="description-screen"></div>
+        <div class="project-details">
+          <div class="description">
+            <h3>senior project</h3>
+            <p>This is the project description.</p>
+            <hr />
+            <p class="more">more</p>
+          </div>
+        </div>
+      </div>
+    <% end %>
+    <% link_to "#" do %>
+      <div class="project-preview tanzania-hotel">
+        <div class="description-screen"></div>
+        <div class="project-details">
+          <div class="description">
+            <h3>tanzania hotel</h3>
+            <p>This is the project description.</p>
+            <hr />
+            <p class="more">more</p>
+          </div>
         </div>
       </div>
     </div>
-    <div class="project-preview senior-project">
-      <div class="description-screen"></div>
-      <div class="project-details">
-        <h3>senior project</h3>
-        <div class="description">
-          <p>This is the project description.</p>
-          <hr />
-          <%= link_to "more" , "#" %>
+  <% end %>
+  <% link_to "#" do %>
+    <div class="panel panel-2">
+      <div class="project-preview slo-highschool">
+        <div class="description-screen"></div>
+        <div class="project-details">
+          <div class="description">
+            <h3>slo high school</h3>
+            <p>This is the project description.</p>
+            <hr />
+            <p class="more">more</p>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="project-preview tanzania-hotel">
-      <div class="description-screen"></div>
-      <div class="project-details">
-        <h3>tanzania hotel</h3>
-        <div class="description">
-          <p>This is the project description.</p>
-          <hr />
-          <%= link_to "more" , "#" %>
+    <% end %>
+    <% link_to "#" do %>
+      <div class="project-preview rose-float">
+        <div class="description-screen"></div>
+        <div class="project-details">
+          <div class="description">
+            <h3>rose float</h3>
+            <p>This is the project description.</p>
+            <hr />
+            <p class="more">more</p>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-  <div class="panel panel-2">
-    <div class="project-preview slo-highschool">
-      <div class="description-screen"></div>
-      <div class="project-details">
-        <h3>slo high school</h3>
-        <div class="description">
-          <p>This is the project description.</p>
-          <hr />
-          <%= link_to "more" , "#" %>
+    <% end %>
+    <% link_to "#" do %>
+      <div class="project-preview design-village">
+        <div class="description-screen"></div>
+        <div class="project-details">
+          <div class="description">
+            <h3>design village</h3>
+            <p>This is the project description.</p>
+            <hr />
+            <p class="more">more</p>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="project-preview rose-float">
-      <div class="description-screen"></div>
-      <div class="project-details">
-        <h3>rose float</h3>
-        <div class="description">
-          <p>This is the project description.</p>
-          <hr />
-          <%= link_to "more" , "#" %>
-        </div>
-      </div>
-    </div>
-    <div class="project-preview design-village">
-      <div class="description-screen"></div>
-      <div class="project-details">
-        <h3>design village</h3>
-        <div class="description">
-          <p>This is the project description.</p>
-          <hr />
-          <%= link_to "more" , "#" %>
-        </div>
-      </div>
-    </div>
+    <% end %>
   </div>
 </div>
 

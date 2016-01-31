@@ -1,10 +1,10 @@
 nav {
   ul {
     @include clearfix;
+    @include outer-container;
     list-style: none;
     padding: 0;
-    background-color: color(blue-gray);
-    margin: 0;
+    margin: 0 auto;
   }
 
   li {
@@ -17,7 +17,6 @@ nav {
 
     a {
       letter-spacing: 2px;
-      color: white;
       line-height: 45px;
     }
   }

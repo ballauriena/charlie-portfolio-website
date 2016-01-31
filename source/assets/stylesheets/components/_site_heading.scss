@@ -1,41 +1,75 @@
-.site-heading {
-  h1, h2 {
-    position: relative;
-    left: -2px;
-  }
+#sticky-header {
+  width: 100%;
+  background-color: white;
+  padding-top: 30px;
 
-  h1 {
-    color: white;
-    line-height: 0.5em;
-    top: -4px;
-  }
-
-  h2 {
-    color: color(gray);
-    top: 14px;
-  }
-
-  .title-bar {
-    background-color: color(gray);
-    height: 39px;
-    overflow: hidden;
-  }
-
-  @include media($desktop) {
+  .site-heading {
     h1, h2 {
-      left: -5px;
+      @include outer-container;
+      transition: all 1s ease;
+      position: relative;
+      left: -2px;
     }
 
     h1 {
-      top: -7px;
+      color: white;
+      line-height: 0.5em;
+      top: -4px;
     }
 
     h2 {
-      top: 25px;
+      color: color(gray);
+      top: 14px;
     }
 
     .title-bar {
-      height: 65px;
+      transition: all 1s ease;
+      background-color: color(gray);
+      height: 39px;
+      overflow: hidden;
     }
+
+    @include media($mobile-max) {
+      padding-top: 0;
+
+      h1, h2 {
+        left: -3px;
+      }
+
+      h1 {
+        top: -7px;
+      }
+
+      h2 {
+        top: 22px;
+      }
+
+      .title-bar {
+        height: 60px;
+      }
+    }
+  }
+
+  &.transform {
+    transition: all 1s ease;
+    position: fixed;
+    z-index: 100;
+    top: -20px;
+
+    h2 {
+      color: color(dark-blue);
+    }
+
+    .title-bar {
+      background-color: color(dark-blue);
+    }
+
+    @include media($mobile-max) {
+      top: -35px;
+    }
+  }
+
+  @include media($mobile-max) {
+    padding-top: 0;
   }
 }

@@ -9,7 +9,7 @@ h1, h2, h3 {
 }
 
 h3 {
-  font-size: 2em;
+  font-size: 1.75em;
   color: color(dark-blue);
   margin: 0;
   font-weight: bold;
@@ -36,16 +36,16 @@ a {
   }
 }
 
-@include media($desktop) {
+@include media($mobile-max) {
   a {
     font-size: 1em;
   }
 
   h1 {
-    font-size: 8.5em;
+    font-size: 7.75em;
   }
 
   h2 {
-    font-size: 5.125em;
+    font-size: 4.6em;
   }
 }

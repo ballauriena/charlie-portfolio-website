@@ -9,11 +9,13 @@
     <title><%= current_page.data.title || "Middleman" %></title>
 
     <%= stylesheet_link_tag 'application' %>
+    <%= javascript_include_tag 'application' %>
   </head>
 
   <body class="<%= body_class %>">
+    <%= partial 'shared/navigation' %>
+
     <main>
-      <%= partial 'shared/navigation' %>
       <%= yield %>
       <%= partial 'shared/footer' %>
     </main>

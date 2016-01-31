@@ -3,17 +3,20 @@
     background-image: image_url("matera-project/cliff.png");
     background-position: center center;
     background-size: 300%;
-    margin-top: 30px;
+
+    @include media($mobile-max) {
+      margin-top: 30px;
+    }
   }
 
   .senior-project {
-    background-image: image_url("tanzania-hotel/from-unit.png");
+    background-image: image_url("design-village/design-village.png");
     background-position: right center;
   }
 
   .tanzania-hotel {
-    background-image: image_url("tanzania-hotel/from-unit.png");
-    background-position: right center;
+    background-image: image_url("tanzania-hotel/wall-photo.jpg");
+    background-position: center center;
     background-size: 300%;
   }
 
