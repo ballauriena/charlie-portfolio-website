@@ -1,8 +1,8 @@
 .homepage {
   .matera-project {
-    background-image: image_url("matera-project/cliff.png");
+    background-image: image_url("matera-project/cliff-index.png");
     background-position: center center;
-    background-size: 300%;
+    background-size: cover;
 
     @include media($mobile-max) {
       margin-top: 30px;
@@ -10,30 +10,31 @@
   }
 
   .senior-project {
-    background-image: image_url("design-village/design-village.png");
+    background-image: image_url("matera-project/cliff-index.png");
     background-position: right center;
-  }
-
-  .tanzania-hotel {
-    background-image: image_url("tanzania-hotel/wall-photo.jpg");
-    background-position: center center;
-    background-size: 300%;
-  }
-
-  .slo-highschool {
-    background-image: image_url("slo-highschool/interior-render.png");
-    background-position: 50% 90%;
-  }
-
-  .rose-float {
-    background-image: image_url("rose-float/float-main.jpg");
-    background-position: center center;
     background-size: cover;
   }
 
+  .tanzania-hotel {
+    background-image: image_url("tanzania-hotel/wall-photo-index.jpg");
+    background-position: center center;
+    background-size: cover
+  }
+
+  .slo-highschool {
+    background-image: image_url("slo-highschool/interior-render-index.png");
+    background-position: 50% 90%;
+    background-size: cover;
+  }
+
+  .rose-float {
+    background-image: image_url("rose-float/float-main-index.jpg");
+    background-position: left center;
+  }
+
   .design-village {
-    background-image: image_url("design-village/design-village.png");
-    background-position: center 60%;
+    background-image: image_url("design-village/design-village-index.png");
+    background-position: left center;
     background-size: cover;
   }
 
