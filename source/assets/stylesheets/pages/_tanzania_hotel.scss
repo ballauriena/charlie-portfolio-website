@@ -1,0 +1,24 @@
+.tanzania-hotel {
+  li {
+    background-size: cover;
+
+    &:nth-of-type(1) {
+      background-image: image_url("tanzania-hotel/from-unit.png");
+    }
+    &:nth-of-type(2) {
+      background-image: image_url("tanzania-hotel/wall-photo.jpg");
+    }
+    &:nth-of-type(3) {
+      background-image: image_url("tanzania-hotel/roof-detail-drawing.png");
+    }
+    &:nth-of-type(4) {
+      background-image: image_url("tanzania-hotel/roof-exploded.png");
+    }
+    &:nth-of-type(5) {
+      background-image: image_url("tanzania-hotel/site-plan.png");
+    }
+    &:nth-of-type(6) {
+      background-image: image_url("tanzania-hotel/wall-section.png");
+    }
+  }
+}

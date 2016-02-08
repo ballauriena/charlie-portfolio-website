@@ -1,0 +1,94 @@
+.project {
+  nav {
+    display: none;
+  }
+
+  .project-wrapper {
+    @include clearfix;
+    position: relative;
+  }
+
+  .photo-display {
+    height: 375px;
+  }
+
+  .project-description, .extendable-bg {
+    background-color: color(light-blue-gray);
+    color: white;
+    padding: 10px;
+
+    h3 {
+      color: white;
+    }
+
+    hr {
+      border: none;
+      background-color: white;
+      height: 2px;
+    }
+  }
+
+  .extendable-bg {
+    z-index: -1;
+  }
+
+  .thumbnails {
+    @include clearfix;
+    margin-top: 10px;
+
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      width: 75px;
+      height: 75px;
+      list-style: none;
+      float: left;
+      display: inline-block;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      border: 5px solid color(gray);
+
+      &:hover {
+        cursor: pointer;
+        border-color: color(light-blue-gray);
+      }
+    }
+
+    @include media($desktop) {
+      margin-bottom: 20px;
+      margin-top: 0;
+    }
+  }
+
+  main.transform {
+    padding-top: 140px;
+  }
+
+  @include media($desktop) {
+    .gallery {
+      @include span-columns(5.5 of 8);
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .project-description, .extendable-bg {
+      @include span-columns(2.5 of 8);
+    }
+
+    .extendable-bg {
+      position: absolute;
+    }
+
+    .extendable-bg {
+      top: 0;
+      bottom: 0;
+    }
+  }
+}
+

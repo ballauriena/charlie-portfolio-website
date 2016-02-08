@@ -12,6 +12,19 @@ footer {
     margin: 0;
   }
 
+  .footer-wrap {
+    @include outer-container;
+
+    @include media($mobile-max) {
+      width: 500px;
+      margin: 0 auto;
+    }
+
+    @include media($desktop) {
+      width: 100%;
+    }
+  }
+
   @include media($mobile-max) {
     padding-left: 0px;
     padding-right: 0px;
