@@ -1,0 +1,24 @@
+.slo-highschool {
+  li {
+    background-size: cover;
+
+    &:nth-of-type(1) {
+      background-image: image_url("slo-highschool/interior-render.png");
+    }
+    &:nth-of-type(2) {
+      background-image: image_url("slo-highschool/circulation.png");
+    }
+    &:nth-of-type(3) {
+      background-image: image_url("slo-highschool/elevation.png");
+    }
+    &:nth-of-type(4) {
+      background-image: image_url("slo-highschool/section-with-details.png");
+    }
+    &:nth-of-type(5) {
+      background-image: image_url("slo-highschool/site-plan.png");
+    }
+    &:nth-of-type(6) {
+      background-image: image_url("slo-highschool/wall-section.png");
+    }
+  }
+}
