@@ -1,0 +1,53 @@
+---
+title: Charlie Crowe | Matera Project
+body_class: project matera-project
+---
+<h2>Matera Project</h2>
+<div class="project-wrapper">
+  <section class="project-description">
+    <h3>background</h3>
+    <hr />
+    <p>
+      As one of the oldest continuously inhabited cities in the world, Matera is
+      a place steeped in history. This includes the history of the film industry
+      as it has been used as a backdrop for countless films. The Matera Film
+      Studio Project was an attempt to chronicle this history in an iconic
+      fashion against the city.
+    </p>
+    <h3>approach</h3>
+    <hr />
+    <p>
+      As a visitor, the studio serves as a museum. You
+      enter the modern addition to the site and are immediately completely
+      thrown off guard as you walk through a tunnel that guides you through the
+      history of the film. Occasional breaks give you a hint as to where you are
+      within the site. The complex wraps a very traditional setting, perfect for
+      the production and adaptation of the neorealist film style adored in
+      Italian culture.
+    </p>
+  </section>
+  <div class="extendable-bg"></div>
+  <div class="gallery">
+    <div class="thumbnails">
+      <ul>
+        <li id="cliff"></li>
+        <li id="main-level"></li>
+        <li id="section"></li>
+        <li id="mouth"></li>
+        <li id="church"></li>
+        <li id="lower-level"></li>
+        <li id="theater"></li>
+        <li id="tower"></li>
+      </ul>
+    </div>
+    <%= image_tag("matera-project/cliff.png", class: "photo-display") %>
+  </div>
+</div>
+
+<% content_for :javascript do %>
+    <script>
+      $(function(){
+        window.activateGallery('matera-project')
+      })
+    </script>
+<% end %>

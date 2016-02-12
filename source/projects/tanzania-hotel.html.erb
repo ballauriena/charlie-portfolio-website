@@ -42,3 +42,11 @@ body_class: project tanzania-hotel
     <%= image_tag("tanzania-hotel/from-unit.png", class: "photo-display") %>
   </div>
 </div>
+
+<% content_for :javascript do %>
+    <script>
+      $(function(){
+        window.activateGallery('tanzania-hotel')
+      })
+    </script>
+<% end %>
