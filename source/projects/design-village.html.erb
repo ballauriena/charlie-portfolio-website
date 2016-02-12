@@ -1,0 +1,44 @@
+---
+title: Charlie Crowe | Design Village
+body_class: project design-village
+---
+<h2>Design Village</h2>
+<div class="project-wrapper">
+  <section class="project-description">
+    <h3>portable structures</h3>
+    <hr />
+    <p>
+      Design Village was an amazing challenge. The goal was to produce a
+      structure that could be transported three miles into a canyon, set up on
+      the side of a hill at an unknown pitch, and easily torn down. It also had
+      to be inhabited by five people comfortably.
+    </p>
+    <p>
+      My team went about this
+      challenge by creating an incredibly light platform made of 1" by 1" box
+      steel. This platform was lifted using three legs of adjustable lengths,
+      and had a roof system made of steel and painters tarp place over top. The
+      modified front wheel assembly made from three different bikes attached to
+      the bottom of the legs so that it could be rolled into place. For the sake
+      of aesthetics and comfort, the entire front portion of the roof system was
+      designed to open up.
+    </p>
+  </section>
+  <div class="extendable-bg"></div>
+  <div class="gallery">
+    <div class="thumbnails">
+      <ul>
+        <li id="design-village"></li>
+      </ul>
+    </div>
+    <%= image_tag("design-village/design-village.png", class: "photo-display") %>
+  </div>
+</div>
+
+<% content_for :javascript do %>
+    <script>
+      $(function(){
+        window.activateGallery('design-village')
+      })
+    </script>
+<% end %>

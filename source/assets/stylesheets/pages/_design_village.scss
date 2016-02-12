@@ -1,0 +1,9 @@
+.design-village {
+  li {
+    background-size: cover;
+
+    &:nth-of-type(1) {
+      background-image: image_url("design-village/design-village.png");
+    }
+  }
+}
