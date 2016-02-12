@@ -1,0 +1,48 @@
+---
+title: Charlie Crowe | Rose Float
+body_class: project rose-float
+---
+<h2>Rose Float</h2>
+<div class="project-wrapper">
+  <section class="project-description">
+    <h3>my passion</h3>
+    <hr />
+    <p>
+      The Rose Parade has had a profound impact on my life. I have served as the
+      only architect on a team of artists and engineers, producing the details
+      necessary to pair the two. Throughout my tenure on the Cal Poly
+      Universities Rose Float Team, we have won four consecutive awards
+      including the Lathrop K. Leishman Trophy for the most beautiful
+      non-commercial float in the parade for two years running. The Rose Float
+      has proven to be an interesting combination of design and construction
+      that has helped me to improve my design skills, refine my communication
+      skills, and enhance my personal understanding of the construction process.
+    </p>
+  </section>
+  <div class="extendable-bg"></div>
+  <div class="gallery">
+    <div class="thumbnails">
+      <ul>
+        <li id="float-main"></li>
+        <li id="bedtime"></li>
+        <li id="soaring-1"></li>
+        <li id="soaring-2"></li>
+        <li id="soaring-3"></li>
+        <li id="soaring-plan"></li>
+        <li id="sweet-1"></li>
+        <li id="sweet-2"></li>
+        <li id="sweet-elevation"></li>
+        <li id="sweet-plan"></li>
+      </ul>
+    </div>
+    <%= image_tag("rose-float/float-main.jpg", class: "photo-display") %>
+  </div>
+</div>
+
+<% content_for :javascript do %>
+    <script>
+      $(function(){
+        window.activateGallery('rose-float')
+      })
+    </script>
+<% end %>

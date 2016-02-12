@@ -1,0 +1,36 @@
+.rose-float {
+  li {
+    background-size: cover;
+
+    &:nth-of-type(1) {
+      background-image: image_url("rose-float/float-main.jpg");
+    }
+    &:nth-of-type(2) {
+      background-image: image_url("rose-float/bedtime.jpg");
+    }
+    &:nth-of-type(3) {
+      background-image: image_url("rose-float/soaring-1.jpg");
+    }
+    &:nth-of-type(4) {
+      background-image: image_url("rose-float/soaring-2.jpg");
+    }
+    &:nth-of-type(5) {
+      background-image: image_url("rose-float/soaring-3.jpg");
+    }
+    &:nth-of-type(6) {
+      background-image: image_url("rose-float/soaring-plan.png");
+    }
+    &:nth-of-type(7) {
+      background-image: image_url("rose-float/sweet-1.png");
+    }
+    &:nth-of-type(8) {
+      background-image: image_url("rose-float/sweet-2.png");
+    }
+    &:nth-of-type(9) {
+      background-image: image_url("rose-float/sweet-elevation.png");
+    }
+    &:nth-of-type(10) {
+      background-image: image_url("rose-float/sweet-plan.png");
+    }
+  }
+}
