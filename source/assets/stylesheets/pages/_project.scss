@@ -9,22 +9,26 @@
   }
 
   .photo-display {
-    height: 375px;
+    max-width: 100%;
+    height: auto;
   }
 
   .project-description, .extendable-bg {
     background-color: color(light-blue-gray);
     color: white;
-    padding: 10px;
+    padding: 20px;
+    font-size: 0.8em;
+    line-height: 1.75em;
 
     h3 {
       color: white;
+      font-weight: 100;
     }
 
     hr {
       border: none;
       background-color: white;
-      height: 2px;
+      height: 1px;
     }
   }
 
