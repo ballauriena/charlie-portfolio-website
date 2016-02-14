@@ -18,9 +18,9 @@ class PhotoGallery
       @thumbnail.on('click', @_changeImage)
 
     _changeImage: =>
-      extension = @thumbnail.css('background-image').split(".").pop().replace('")', "")
-      thing = @thumbnail.attr('id')
-      @$el.attr('src', "/assets/images/#{@project}/#{thing}.#{extension}")
+      extension = @thumbnail.css('background-image').split(".").pop().replace('"', '').replace(')', '')
+      image = @thumbnail.attr('id')
+      @$el.attr('src', "/assets/images/#{@project}/#{image}.#{extension}")
 
 window.activateGallery = (project) ->
   new PhotoGallery({ el: $('.photo-display'), thumbnails: $('.thumbnails li'), project: project }).setup()
