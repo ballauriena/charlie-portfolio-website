@@ -1,5 +1,8 @@
 set :url_root, 'http://www.charliecrowe.co'
 
+
+activate :imageoptim
+
 # Configure assets directories
 # ----------------------------------------------
 config[:css_dir]    = 'assets/stylesheets'
