@@ -58,11 +58,11 @@
     top: -20px;
 
     h2 {
-      color: color(dark-gray);
+      color: color(dark-blue);
     }
 
     .title-bar {
-      background-color: color(dark-gray);
+      background-color: color(dark-blue);
     }
 
     @include media($mobile-max) {

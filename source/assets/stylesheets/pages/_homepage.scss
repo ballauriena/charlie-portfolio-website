@@ -10,15 +10,15 @@
   }
 
   .senior-project {
-    background-image: image_url("matera-project/cliff-index.png");
+    background-image: image_url("senior-project/cubicle-1.gif");
     background-position: right center;
-    background-size: cover;
+    background-size: contain;
   }
 
   .tanzania-hotel {
-    background-image: image_url("tanzania-hotel/wall-photo-index.jpg");
+    background-image: image_url("tanzania-hotel/from-unit.png");
     background-position: center center;
-    background-size: cover
+    background-size: cover;
   }
 
   .slo-highschool {
@@ -83,23 +83,12 @@
       top: 65px;
     }
 
-    hr {
-      border: none;
-      background-color: white;
-      width: 200px;
-      height: 1px;
-      float: left;
-      margin-left: 25px;
-    }
-
     p {
       color: white;
       float: left;
       margin-left: 25px;
       clear: left;
-      margin-top: 0;
       font-weight: bold;
-      font-family: $header-font-family;
     }
 
     .contact-links {

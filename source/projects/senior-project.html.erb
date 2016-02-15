@@ -1,0 +1,64 @@
+---
+title: Charlie Crowe | Senior Project
+body_class: project senior-project
+---
+<h2>Senior Project</h2>
+<div class="project-wrapper">
+  <div class="gallery">
+    <div class="thumbnails">
+      <ul>
+        <li id="cubicle-1"></li>
+        <li id="cubicle-2"></li>
+        <li id="double-hall-wave"></li>
+        <li id="hall-wave"></li>
+        <li id="lofted-single-floor"></li>
+        <li id="one-sided-room"></li>
+        <li id="plant-wall"></li>
+        <li id="train"></li>
+      </ul>
+    </div>
+    <%= image_tag("senior-project/cubicle-1.gif", class: "photo-display") %>
+  </div>
+    <section class="project-description">
+    <h3>wonder in architecture</h3>
+    <hr />
+    <p>
+      Imagine a daily commute to work in Chicago. You wake up, eat breakfast,
+      shower, brush your teeth, and head to the train station, but while waiting
+      at the station for your train to come in, something throws your day off.
+      Your train is a full five minutes late and you are positive you are going
+      to be late to work. This is when your commute gets weird. What pulls into
+      the station is not a normal commuter train at all, but instead, this
+      metamorphic object that doesn't look like anything you have ever seen
+      before. You hop on knowing it is the only way to get to work. Immediately,
+      things become even stranger. In place of your regular seats on the
+      commuter line is a series of paintings and art pieces. The next car down
+      has a band playing. What you surmised would be a
+      more-interesting-than-usual ride to work has become a time to slow down
+      your average day and make things just a bit more exciting.
+      You decide that rather than just standing around, you will
+      walk through the exhibits. At the end of the ride, sure, you are ten minutes late to work,
+      but you feel more relaxed and ready for the day, hoping you get another
+      chance on this enigmatic ride. An experience like this would bring more
+      wonder and interest to people's daily lives.
+    </p>
+    <p>
+      Thaumaturgy is the study of wonder. This project attempts to understand
+      what wonder can be in architecture by comparing details in a building to
+      elements designed for the Rose Parade. Simple mechanics with somewhat
+      unknown devices are drawn in abstract moving images, illuminating the
+      possibilities of what architecture can create. The project explores the
+      purpose of architecture, which was originally intended to make the world
+      grander, and has since been reduced to the simple development of details
+      that copy the world as it is.
+    </p>
+  </section>
+</div>
+
+<% content_for :javascript do %>
+    <script>
+      $(function(){
+        window.activateGallery('senior-project')
+      })
+    </script>
+<% end %>

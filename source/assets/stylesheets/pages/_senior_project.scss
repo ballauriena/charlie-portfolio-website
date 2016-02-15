@@ -1,0 +1,38 @@
+.senior-project {
+  .project-description, .gallery {
+    width: 100%;
+  }
+
+  .thumbnails {
+    margin-top: 10px;
+  }
+
+  li {
+    background-size: cover;
+
+    &:nth-of-type(1) {
+      background-image: image_url("senior-project/cubicle-1.gif");
+    }
+    &:nth-of-type(2) {
+      background-image: image_url("senior-project/cubicle-2.gif");
+    }
+    &:nth-of-type(3) {
+      background-image: image_url("senior-project/double-hall-wave.gif");
+    }
+    &:nth-of-type(4) {
+      background-image: image_url("senior-project/hall-wave.gif");
+    }
+    &:nth-of-type(5) {
+      background-image: image_url("senior-project/lofted-single-floor.gif");
+    }
+    &:nth-of-type(6) {
+      background-image: image_url("senior-project/one-sided-room.gif");
+    }
+    &:nth-of-type(7) {
+      background-image: image_url("senior-project/plant-wall.gif");
+    }
+    &:nth-of-type(8) {
+      background-image: image_url("senior-project/train.gif");
+    }
+  }
+}

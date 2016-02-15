@@ -76,7 +76,7 @@
       @include span-columns(5.5 of 8);
 
       img {
-        width: 100%;
+        max-width: 100%;
         height: auto;
       }
     }
