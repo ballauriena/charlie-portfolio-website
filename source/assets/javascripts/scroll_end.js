@@ -9,12 +9,12 @@ $.fn.scrollEnd = function(callback, timeout) {
 };
 
 $(window).scrollEnd(function(){
-    if($(document).scrollTop() < 800) {
+    if($(document).scrollTop() < 950) {
       $('a[href=#biography]').removeClass('active', 1000)
       $('a[href=#contact]').removeClass('active', 1000)
       $('a[href=#portfolio]').addClass('active', 1000)
     }
-    else if($(document).scrollTop() >= 800 && $(document).scrollTop() < 2000) {
+    else if($(document).scrollTop() >= 950 && $(document).scrollTop() < 2000) {
       $('a[href=#portfolio]').removeClass('active', 1000)
       $('a[href=#contact]').removeClass('active', 1000)
       $('a[href=#biography]').addClass('active', 1000)

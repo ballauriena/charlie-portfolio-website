@@ -82,7 +82,7 @@
 
     p {
       &:first-of-type {
-        margin-top: 35px;
+        margin-top: 31px;
         font-size: 0.8em;
         line-height: 1.55em;
         color: black;
@@ -90,7 +90,7 @@
     }
 
     @include media($mobile-max) {
-      padding: 25px 20px 15px 20px;
+      padding: 10px 20px 15px 20px;
       height: 150px;
       display: block;
 

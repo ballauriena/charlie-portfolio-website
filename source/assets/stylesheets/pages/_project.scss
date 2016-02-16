@@ -6,7 +6,7 @@
     display: block;
 
     li {
-      width: 200px;
+      width: 250px;
     }
   }
 
@@ -31,16 +31,19 @@
     height: auto;
   }
 
-  .project-description, .extendable-bg {
+  .project-description {
     background-color: color(dark-blue);
     color: white;
     padding: 20px;
     font-size: 0.8em;
     line-height: 1.75em;
+    padding-bottom: 2em;
 
     h3 {
       color: white;
       font-weight: 100;
+      font-size: 2em;
+      margin-top: 1em;
     }
 
     hr {
@@ -49,13 +52,14 @@
       height: 1px;
 
       @include media($desktop) {
-        width: 25%;
+        width: 50%;
         float: left;
       }
     }
 
     p {
       clear: left;
+      margin-top: 2em;
     }
   }
 
