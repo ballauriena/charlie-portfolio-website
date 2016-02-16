@@ -4,6 +4,15 @@
   }
   .project-nav {
     display: block;
+
+    li {
+      width: 200px;
+    }
+  }
+
+  h2 {
+    clear: both;
+    margin-top: 20px;
   }
 
   .project-wrapper {

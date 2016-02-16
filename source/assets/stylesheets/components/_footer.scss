@@ -7,6 +7,26 @@ footer {
   top: 0;
   color: color(gray);
 
+  ul {
+    float: right;
+    display: inline-block;
+    margin: 0;
+    position: relative;
+    top: -10px;
+
+    li {
+      list-style: none;
+      float: left;
+      display: inline-block;
+      margin-left: 20px;
+      font-size: 2em;
+
+      a {
+        color: color(gray);
+      }
+    }
+  }
+
   p {
     float: left;
     margin: 0;
