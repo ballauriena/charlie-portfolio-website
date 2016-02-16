@@ -2,8 +2,22 @@
 title: Charlie Crowe | Tanzania Hotel
 body_class: project tanzania-hotel
 ---
-<h2>Tanzania Hotel</h2>
+
 <div class="project-wrapper">
+  <h2>Tanzania Hotel</h2>
+  <div class="gallery">
+    <div class="thumbnails">
+      <ul>
+        <li id="from-unit"></li>
+        <li id="wall-photo"></li>
+        <li id="roof-detail-drawing"></li>
+        <li id="roof-exploded"></li>
+        <li id="site-plan"></li>
+        <li id="wall-section"></li>
+      </ul>
+    </div>
+    <%= image_tag("tanzania-hotel/from-unit.png", class: "photo-display") %>
+  </div>
   <section class="project-description">
     <h3>the objective</h3>
     <hr />
@@ -24,20 +38,6 @@ body_class: project tanzania-hotel
       for the hotel complex.
     </p>
   </section>
-  <div class="extendable-bg"></div>
-  <div class="gallery">
-    <div class="thumbnails">
-      <ul>
-        <li id="from-unit"></li>
-        <li id="wall-photo"></li>
-        <li id="roof-detail-drawing"></li>
-        <li id="roof-exploded"></li>
-        <li id="site-plan"></li>
-        <li id="wall-section"></li>
-      </ul>
-    </div>
-    <%= image_tag("tanzania-hotel/from-unit.png", class: "photo-display") %>
-  </div>
 </div>
 
 <% content_for :javascript do %>

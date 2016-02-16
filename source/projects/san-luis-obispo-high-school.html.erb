@@ -2,8 +2,21 @@
 title: Charlie Crowe | SLO High School
 body_class: project slo-highschool
 ---
-<h2>SLO High School</h2>
+
 <div class="project-wrapper">
+  <h2>SLO High School</h2>
+  <div class="gallery">
+    <div class="thumbnails">
+      <ul>
+        <li id="interior-render"></li>
+        <li id="circulation"></li>
+        <li id="wall-section"></li>
+        <li id="section-with-details"></li>
+        <li id="site-plan"></li>
+      </ul>
+    </div>
+    <%= image_tag("slo-highschool/interior-render.png", class: "photo-display") %>
+  </div>
   <section class="project-description">
     <h3>the challenge</h3>
     <hr />
@@ -22,19 +35,6 @@ body_class: project slo-highschool
       together proactively instead of being taught passively.
     </p>
   </section>
-  <div class="extendable-bg"></div>
-  <div class="gallery">
-    <div class="thumbnails">
-      <ul>
-        <li id="interior-render"></li>
-        <li id="circulation"></li>
-        <li id="wall-section"></li>
-        <li id="section-with-details"></li>
-        <li id="site-plan"></li>
-      </ul>
-    </div>
-    <%= image_tag("slo-highschool/interior-render.png", class: "photo-display") %>
-  </div>
 </div>
 
 <% content_for :javascript do %>

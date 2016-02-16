@@ -6,6 +6,12 @@
   .project-wrapper {
     @include clearfix;
     position: relative;
+
+    @include media($mobile-max) {
+      h2 {
+        font-size: 3.75em;
+      }
+    }
   }
 
   .photo-display {
@@ -29,6 +35,15 @@
       border: none;
       background-color: white;
       height: 1px;
+
+      @include media($desktop) {
+        width: 25%;
+        float: left;
+      }
+    }
+
+    p {
+      clear: left;
     }
   }
 
@@ -73,25 +88,10 @@
 
   @include media($desktop) {
     .gallery {
-      @include span-columns(5.5 of 8);
-
       img {
         max-width: 100%;
         height: auto;
       }
-    }
-
-    .project-description, .extendable-bg {
-      @include span-columns(2.5 of 8);
-    }
-
-    .extendable-bg {
-      position: absolute;
-    }
-
-    .extendable-bg {
-      top: 0;
-      bottom: 0;
     }
   }
 }

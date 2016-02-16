@@ -7,11 +7,20 @@
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
   border: 10px solid white;
+  border-radius: 3px;
 
   &:hover {
     transition: all 0.3s ease;
     -webkit-filter: grayscale(0%);
     filter: grayscale(0%);
+
+    .project-details .description {
+      background-color: color(dark-blue);
+
+      h3, p {
+        color: white;
+      }
+    }
 
     h3 {
       transition: border 0.3s ease;
@@ -31,14 +40,15 @@
 }
 
 .project-details {
+  @include clearfix;
   position: absolute;
   top: -22px;
-  width: 250px;
+  width: 200px;
 
   h3 {
     transition: all 0.3s ease;
     line-height: 1.1em;
-    font-weight: 100;
+    font-weight: bold;
     display: inline-block;
     position: absolute;
 
@@ -49,7 +59,7 @@
       height: 1px;
       bottom: 0;
       left: 0;
-      background-color: #000;
+      background-color: white;
       visibility: hidden;
       -webkit-transform: scaleX(0);
       transform: scaleX(0);
@@ -61,41 +71,27 @@
   .description {
     @include clearfix;
     transition: all 0.3s ease;
-    background-color: color(light-blue-gray);
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 2px;
     font-weight: bold;
     padding: 8px 20px;
     position: relative;
-    top: 22px;
+    top: 48px;
+    left: 25px;
     display: none;
-
-    hr {
-      margin-top: 25px;
-      border: 0;
-      background-color: color(dark-gray);
-      height: 1px;
-    }
 
     p {
       &:first-of-type {
         margin-top: 35px;
         font-size: 0.8em;
         line-height: 1.55em;
+        color: black;
       }
-
-      &:last-of-type {
-        margin: 0;
-      }
-    }
-
-    .more {
-      position: absolute;
-      bottom: 10px;
-      right: 20px;
     }
 
     @include media($mobile-max) {
       padding: 25px 20px 15px 20px;
-      height: 200px;
+      height: 150px;
       display: block;
 
       hr {
@@ -104,9 +100,5 @@
         width: 210px;
       }
     }
-  }
-
-  @include media($mobile-max) {
-    width: 250px;
   }
 }

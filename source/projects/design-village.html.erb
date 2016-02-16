@@ -2,8 +2,17 @@
 title: Charlie Crowe | Design Village
 body_class: project design-village
 ---
-<h2>Design Village</h2>
+
 <div class="project-wrapper">
+  <h2>Design Village</h2>
+  <div class="gallery">
+    <div class="thumbnails">
+      <ul>
+        <li id="design-village"></li>
+      </ul>
+    </div>
+    <%= image_tag("design-village/design-village.png", class: "photo-display") %>
+  </div>
   <section class="project-description">
     <h3>portable structures</h3>
     <hr />
@@ -31,15 +40,6 @@ body_class: project design-village
       of the highest rated by participants at the competition.
     </p>
   </section>
-  <div class="extendable-bg"></div>
-  <div class="gallery">
-    <div class="thumbnails">
-      <ul>
-        <li id="design-village"></li>
-      </ul>
-    </div>
-    <%= image_tag("design-village/design-village.png", class: "photo-display") %>
-  </div>
 </div>
 
 <% content_for :javascript do %>

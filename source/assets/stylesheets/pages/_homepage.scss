@@ -61,15 +61,15 @@
     }
 
     p {
-      margin: 2em;
+      margin: 2em 0;
       line-height: 1.7em;
-      padding: 0 25px;
+      padding-right: 25px;
       font-size: 0.85em;
     }
 
     @include media($desktop) {
       p {
-        padding: 0 150px;
+        padding-right: 150px;
         font-size: 1em;
       }
     }
@@ -112,7 +112,7 @@
         color: white;
 
         &:hover {
-          color: color(light-blue-gray);
+          color: color(dark-blue);
         }
       }
     }
@@ -125,6 +125,10 @@
     }
 
     @include media($desktop) {
+      i {
+        font-size: 1.5em;
+      }
+
       .content {
         top: 145px;
         margin-left: 100px;
