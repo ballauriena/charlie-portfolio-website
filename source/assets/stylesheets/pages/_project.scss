@@ -1,6 +1,9 @@
 .project {
-  nav {
+  .main-nav {
     display: none;
+  }
+  .project-nav {
+    display: block;
   }
 
   .project-wrapper {
@@ -80,10 +83,6 @@
       margin-bottom: 20px;
       margin-top: 0;
     }
-  }
-
-  main.transform {
-    padding-top: 140px;
   }
 
   @include media($desktop) {
