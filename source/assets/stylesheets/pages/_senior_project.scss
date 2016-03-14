@@ -14,21 +14,24 @@
         background-image: image_url("senior-project/cubicle-2.gif");
       }
       &:nth-of-type(3) {
-        background-image: image_url("senior-project/double-hall-wave.gif");
+        background-image: image_url("senior-project/from-the-station.png");
       }
       &:nth-of-type(4) {
-        background-image: image_url("senior-project/hall-wave.gif");
+        background-image: image_url("senior-project/hobo-circus.png");
       }
       &:nth-of-type(5) {
         background-image: image_url("senior-project/lofted-single-floor.gif");
       }
       &:nth-of-type(6) {
-        background-image: image_url("senior-project/one-sided-room.gif");
-      }
-      &:nth-of-type(7) {
         background-image: image_url("senior-project/plant-wall.gif");
       }
+      &:nth-of-type(7) {
+        background-image: image_url("senior-project/restaurant.png");
+      }
       &:nth-of-type(8) {
+        background-image: image_url("senior-project/section.png");
+      }
+      &:nth-of-type(9) {
         background-image: image_url("senior-project/train.gif");
       }
     }
